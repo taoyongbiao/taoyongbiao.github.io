@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>linux软件安装及卸载 | Hexo</title>
+  <title>linux程序管理 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="linux软件 linux运行的程序是由编译器编译出的二进制程序，主要存放在/usr/bin 、/bin中 外部依赖库存放在/usr/include 、/usr/lib、/usr/lib64当中 linux软件安装两种方式   源代码安装 configure侦测环境是否有所需编译器及其他条件，并生成makefile文件（因为不同linux的函数库，编译器可能不同）    make寻找makefil">
+  <meta name="description" content="linux程序管理基本概念 程式program 二进制文件 程序process 用户触发，载入内存获得所需的资源，并给与pid及相关权限属性的个体，系统通过pid判定是否有权限进行工作 常驻内存中的程序被称为服务，网络程序执行后会启动一个负责网络监听的端口，一共外部客户端的连线要求linux多人多工环境 pid设计给与了可能 多人环境：每个登入shell的pid不同 多工行为：cpu在各个工作间切">
 <meta property="og:type" content="article">
-<meta property="og:title" content="linux软件安装及卸载">
-<meta property="og:url" content="http://yoursite.com/2019/07/18/linux软件安装及卸载/index.html">
+<meta property="og:title" content="linux程序管理">
+<meta property="og:url" content="http://yoursite.com/2019/07/18/linux程序管理/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="linux软件 linux运行的程序是由编译器编译出的二进制程序，主要存放在/usr/bin 、/bin中 外部依赖库存放在/usr/include 、/usr/lib、/usr/lib64当中 linux软件安装两种方式   源代码安装 configure侦测环境是否有所需编译器及其他条件，并生成makefile文件（因为不同linux的函数库，编译器可能不同）    make寻找makefil">
+<meta property="og:description" content="linux程序管理基本概念 程式program 二进制文件 程序process 用户触发，载入内存获得所需的资源，并给与pid及相关权限属性的个体，系统通过pid判定是否有权限进行工作 常驻内存中的程序被称为服务，网络程序执行后会启动一个负责网络监听的端口，一共外部客户端的连线要求linux多人多工环境 pid设计给与了可能 多人环境：每个登入shell的pid不同 多工行为：cpu在各个工作间切">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-18T08:52:36.885Z">
+<meta property="og:updated_time" content="2019-07-18T10:09:54.799Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="linux软件安装及卸载">
-<meta name="twitter:description" content="linux软件 linux运行的程序是由编译器编译出的二进制程序，主要存放在/usr/bin 、/bin中 外部依赖库存放在/usr/include 、/usr/lib、/usr/lib64当中 linux软件安装两种方式   源代码安装 configure侦测环境是否有所需编译器及其他条件，并生成makefile文件（因为不同linux的函数库，编译器可能不同）    make寻找makefil">
+<meta name="twitter:title" content="linux程序管理">
+<meta name="twitter:description" content="linux程序管理基本概念 程式program 二进制文件 程序process 用户触发，载入内存获得所需的资源，并给与pid及相关权限属性的个体，系统通过pid判定是否有权限进行工作 常驻内存中的程序被称为服务，网络程序执行后会启动一个负责网络监听的端口，一共外部客户端的连线要求linux多人多工环境 pid设计给与了可能 多人环境：每个登入shell的pid不同 多工行为：cpu在各个工作间切">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,47 +154,33 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-linux软件安装及卸载" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-linux程序管理" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      linux软件安装及卸载
+      linux程序管理
     </h1>
   
 
         
-        <a href="/2019/07/18/linux软件安装及卸载/" class="archive-article-date">
-  	<time datetime="2019-07-18T07:59:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-18</time>
+        <a href="/2019/07/18/linux程序管理/" class="archive-article-date">
+  	<time datetime="2019-07-18T09:38:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="linux软件"><a href="#linux软件" class="headerlink" title="linux软件"></a>linux软件</h1><ul>
-<li>linux运行的程序是由编译器编译出的二进制程序，主要存放在/usr/bin 、/bin中</li>
-<li>外部依赖库存放在/usr/include 、/usr/lib、/usr/lib64当中<ul>
-<li>linux软件安装两种方式</li>
-</ul>
-</li>
-<li>源代码安装<ul>
-<li>configure侦测环境是否有所需编译器及其他条件，并生成makefile文件（因为不同linux的函数库，编译器可能不同）   </li>
-<li>make寻找makefile文件，makefile文件中记录了原始码变动详情</li>
-<li><em>优点：更适合自己的电脑，但需要编译安装速度慢</em></li>
-<li><em>tar最好解压到/usr/local/src当中，安装最好安装在/usr/local中方便以后卸载</em></li>
-</ul>
-</li>
-<li>以编译好二进制程序直接安装<ul>
-<li>常见发行版本<ul>
-<li>red hat系统（centos/fedora)发展的rpm软件管理机制及yum线上更新</li>
-<li>debian系统dpkg软件管理及apt线上更新</li>
-</ul>
-</li>
-</ul>
-</li>
+        <h1 id="linux程序管理"><a href="#linux程序管理" class="headerlink" title="linux程序管理"></a>linux程序管理</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ul>
+<li>程式program 二进制文件</li>
+<li>程序process 用户触发，载入内存获得所需的资源，并给与pid及相关权限属性的个体，系统通过pid判定是否有权限进行工作</li>
+<li>常驻内存中的程序被称为服务，网络程序执行后会启动一个负责网络监听的端口，一共外部客户端的连线要求<h2 id="linux多人多工环境"><a href="#linux多人多工环境" class="headerlink" title="linux多人多工环境"></a>linux多人多工环境</h2></li>
+<li>pid设计给与了可能</li>
+<li>多人环境：每个登入shell的pid不同</li>
+<li>多工行为：cpu在各个工作间切换（主频即cpu在1s内能切换的次数），多人登陆时感觉自己独占电脑了<h2 id="工作管理"><a href="#工作管理" class="headerlink" title="工作管理"></a>工作管理</h2></li>
 </ul>
 
       
@@ -275,7 +261,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/18/linux软件安装及卸载/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/18/linux程序管理/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -289,18 +275,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/07/18/linux程序管理/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          linux程序管理
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/07/16/我的第一篇博客/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">第一篇博客</div>
+    <a href="/2019/07/18/linux软件安装及卸载/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">linux软件安装及卸载</div>
       <i class="icon-circle-right"></i>
     </a>
   
