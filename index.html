@@ -152,6 +152,105 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-linux-vim插件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/22/linux-vim插件/">linux vim插件</a>
+    </h1>
+  
+
+        
+        <a href="/2019/07/22/linux-vim插件/" class="archive-article-date">
+  	<time datetime="2019-07-22T10:23:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>插件管理</p>
+<ul>
+<li><p>pathogen</p>
+<ul>
+<li><p>安装：git clone <a href="https://github.com/tpope/vim-pathogen" target="_blank" rel="noopener">https://github.com/tpope/vim-pathogen</a> ~/.vim/autoload</p>
+</li>
+<li><p>启用：vim ~/.vimrc </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">execute pathogen#infect()</span><br><span class="line">syntax on</span><br><span class="line">filetype plugin indent on</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>插件安装及卸载：在当前用户目录~/.vim/下新建bundle目录，将新安装插件放到该目录下后，Pathogen会自动在bundle目录下生成对应插件子目录并使该插件生效 而如果需要卸载插件，只需把 ~/.vim/bundle目录下对应的插件目录删除即可</p>
+</li>
+</ul>
+</li>
+<li><p>vundle    </p>
+<ul>
+<li><p>安装：git clone <a href="https://github.com/VundleVim/Vundle.vim.git" target="_blank" rel="noopener">https://github.com/VundleVim/Vundle.vim.git</a> ~/.vim/bundle</p>
+</li>
+<li><p>配置：vim ~/vimrc</p>
+<figure class="highlight plain"><figcaption><span>nocompatible               "去除VIM一致性，必须"</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">filetype off                   &quot;必须&quot;</span><br><span class="line"></span><br><span class="line">&quot;设置包括vundle和初始化相关的运行时路径&quot;</span><br><span class="line">set rtp+=~/.vim/bundle/Vundle.vim</span><br><span class="line">call vundle#begin()</span><br><span class="line"></span><br><span class="line">&quot;启用vundle管理插件，必须&quot;</span><br><span class="line">Plugin &apos;VundleVim/Vundle.vim&apos;</span><br><span class="line"></span><br><span class="line">&quot;在此增加其他插件，安装的插件需要放在vundle#begin和vundle#end之间&quot;</span><br><span class="line">&quot;安装github上的插件格式为 Plugin &apos;用户名/插件仓库名&apos;&quot;</span><br><span class="line"></span><br><span class="line">call vundle#end()              </span><br><span class="line">filetype plugin indent on      &quot;加载vim自带和插件相应的语法和文件类型相关脚本，必须&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装及卸载：首先需要将要安装的插件，按照上述配置格式将插件地址填写在vundle#begin和vundle#end之间并保存</p>
+<ul>
+<li>设置好配置文件后，可通过下述两种方法安装插件:</li>
+<li>在Vim尾行模式下运行命令:PluginInstall</li>
+<li>在终端命令行下通过命令vim +PluginInstall +qall直接安装</li>
+<li>至此，需要安装的插件已经安装完毕，可以正常使用了</li>
+<li>使用Vundle删除插件</li>
+<li>需要删除Vim插件时，只需编辑Vim配置文件.vimrc文件，删除要移除插件所对应的Plugin一行</li>
+<li>打开Vim，在Vim尾行模式执行命令:BundleClean即可删除对应Vim插件</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/22/linux-vim插件/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-权限管理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
