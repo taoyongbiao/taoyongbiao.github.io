@@ -152,6 +152,73 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-bash" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/23/bash/">bash</a>
+    </h1>
+  
+
+        
+        <a href="/2019/07/23/bash/" class="archive-article-date">
+  	<time datetime="2019-07-23T10:39:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>位于/bin/bash</li>
+<li>命令别名配置功能 alias: alias lm=”ls -al”</li>
+<li></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/23/bash/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-gradle学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -341,11 +408,17 @@
     <div class="article-entry" itemprop="articleBody">
       
         <ul>
-<li>权限说明<pre><code>- 所有者权限-同组用户权限-其他用户权限，rwx-读取-写入-执行 4+2+1，
-- 权限修改命令chmod 755 file/dirctionary
-- -R递归</code></pre></li>
-<li>所属用户<pre><code>- chown 所属用户：所属用户组 file/dir
-- -R递归</code></pre></li>
+<li>权限说明<ul>
+<li>所有者权限-同组用户权限-其他用户权限，rwx-读取-写入-执行 4+2+1，</li>
+<li>权限修改命令chmod 755 file/dirctionary</li>
+<li>-R递归</li>
+</ul>
+</li>
+<li>所属用户<ul>
+<li>chown 所属用户：所属用户组 file/dir</li>
+<li>-R递归</li>
+</ul>
+</li>
 </ul>
 
       
@@ -646,11 +719,11 @@
 <li>fg %jobnumber 将后台程序调到前台继续执行</li>
 <li>bg %jobnumber 将后台暂停命令继续执行</li>
 <li>stop %jobnumber 将后台运行命令暂停</li>
+<li><em>kill</em> </li>
 </ol>
-<p>*kill </p>
 <ul>
-<li>kill %jobnumer</li>
-<li>kill pid*</li>
+<li><em>kill %jobnumer</em></li>
+<li><em>kill pid</em></li>
 </ul>
 
       
@@ -721,7 +794,7 @@
 </ul>
 </li>
 <li>源代码安装<ul>
-<li>configure侦测环境是否有所需编译器及其他条件，并生成makefile文件（因为不同linux的函数库，编译器可能不同）   </li>
+<li>configure侦测环境是否有所需编译器及其他条件，并生成makefile文件（因为不同linux的函数库，编译器可能不同）</li>
 <li>make寻找makefile文件，makefile文件中记录了原始码变动详情</li>
 <li><em>优点：更适合自己的电脑，但需要编译安装速度慢</em></li>
 <li><em>tar最好解压到/usr/local/src当中，安装最好安装在/usr/local中方便以后卸载</em></li>
@@ -731,7 +804,15 @@
 <li>以编译好二进制程序直接安装<ul>
 <li>常见发行版本<ul>
 <li>red hat系统（centos/fedora)发展的rpm软件管理机制及yum线上更新</li>
-<li>debian系统dpkg软件管理及apt线上更新</li>
+<li>debian系统dpkg软件管理及apt线上更新<ul>
+<li>软件查找</li>
+<li>locate </li>
+<li>非实时查找，查找数据库/var/lib/locatedb 所有本地文件信息，为查找最新，可使用updatedb </li>
+<li>which 查找命令是否存在，以及命令存放在那里</li>
+<li>whereis 查找程序名，而且只搜索二进制文件</li>
+<li>find 实时精确查找，速度慢</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -951,11 +1032,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">linux学习</a>
+                <a href="javascript:void(0)" class="js-tag color2">基础工具学习</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">基础工具学习</a>
+                <a href="javascript:void(0)" class="js-tag color3">linux学习</a>
               </li>
             
             <div class="clearfix"></div>
