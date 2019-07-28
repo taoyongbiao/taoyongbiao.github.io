@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>gradle学习 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基础概念 gradle 由一个或多个projects构成 project由一个或多个原子性task组成：打包、编译、">
+  <meta name="description" content="基础概念 gradle 由一个或多个projects构成 project由一个或多个原子性task组成：打包、编译、   build.gradle 外部依赖  dependencies{  compile group: ‘ ‘,  name: ‘ ‘,  version:  } 添加插件  apply plugin : ‘java’ 添加仓库  repositories {  } 发布jar包">
 <meta property="og:type" content="article">
 <meta property="og:title" content="gradle学习">
 <meta property="og:url" content="http://yoursite.com/2019/07/23/gradle学习/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="基础概念 gradle 由一个或多个projects构成 project由一个或多个原子性task组成：打包、编译、">
+<meta property="og:description" content="基础概念 gradle 由一个或多个projects构成 project由一个或多个原子性task组成：打包、编译、   build.gradle 外部依赖  dependencies{  compile group: ‘ ‘,  name: ‘ ‘,  version:  } 添加插件  apply plugin : ‘java’ 添加仓库  repositories {  } 发布jar包">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-23T08:19:27.012Z">
+<meta property="og:updated_time" content="2019-07-25T13:15:00.846Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="gradle学习">
-<meta name="twitter:description" content="基础概念 gradle 由一个或多个projects构成 project由一个或多个原子性task组成：打包、编译、">
+<meta name="twitter:description" content="基础概念 gradle 由一个或多个projects构成 project由一个或多个原子性task组成：打包、编译、   build.gradle 外部依赖  dependencies{  compile group: ‘ ‘,  name: ‘ ‘,  version:  } 添加插件  apply plugin : ‘java’ 添加仓库  repositories {  } 发布jar包">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -178,6 +178,21 @@
 <li>基础概念<ul>
 <li>gradle 由一个或多个projects构成</li>
 <li>project由一个或多个原子性task组成：打包、编译、</li>
+</ul>
+</li>
+<li>build.gradle<ul>
+<li>外部依赖<br>  dependencies{<br>  compile group: ‘ ‘,<br>  name: ‘ ‘,<br>  version:<br>  }</li>
+<li>添加插件<br>  apply plugin : ‘java’</li>
+<li>添加仓库<br>  repositories {<br>  }</li>
+<li>发布jar包<br>  uploadArchives {<pre><code>repositories {
+   flatDir {
+      dir &apos;repos&apos;
+    }
+  }
+ }</code></pre></li>
+<li>kk<br>  jar {<br>  manifest {<pre><code>    attributes &apos;Implementation-Title&apos;: &apos;Gradle Quickstart&apos;, &apos;Implementation-Version&apos;: version
+    }
+}</code></pre></li>
 </ul>
 </li>
 </ul>
